@@ -1,0 +1,14 @@
+.gitignore
+.npmignore
+api.ts
+base.ts
+common.ts
+configuration.ts
+docs/CreateTaskRequest.md
+docs/TaskApi.md
+docs/TaskDto.md
+docs/TaskDtoPagedResponse.md
+docs/TaskStatus.md
+docs/UpdateTaskRequest.md
+git_push.sh
+index.ts

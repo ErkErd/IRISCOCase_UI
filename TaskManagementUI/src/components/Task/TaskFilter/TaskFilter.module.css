@@ -1,0 +1,30 @@
+.filterContainer {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.searchInput {
+  flex: 2;
+  min-width: 0;
+}
+
+.statusFilter {
+  flex: 1;
+  min-width: 200px;
+}
+
+@media (max-width: 768px) {
+  .filterContainer {
+    flex-direction: column;
+  }
+
+  .statusFilter {
+    min-width: 0;
+  }
+}
+
+

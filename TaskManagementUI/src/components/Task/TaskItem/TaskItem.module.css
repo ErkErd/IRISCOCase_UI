@@ -1,0 +1,143 @@
+.taskItem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.taskHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.taskTitle {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  flex: 1;
+  word-break: break-word;
+}
+
+.statusBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.statusTodo {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.statusInProgress {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.statusDone {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.taskDescription {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.taskMeta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.dueDate {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #6b7280;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.overdue {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.today {
+  color: #f59e0b;
+  font-weight: 500;
+}
+
+.overdueLabel {
+  padding: 0.125rem 0.5rem;
+  background-color: #fee2e2;
+  color: #dc2626;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.todayLabel {
+  padding: 0.125rem 0.5rem;
+  background-color: #fef3c7;
+  color: #f59e0b;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.taskActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.statusSelect {
+  flex: 1;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .taskHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .taskActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .statusSelect {
+    width: 100%;
+  }
+
+  .actionButtons {
+    width: 100%;
+  }
+
+  .actionButtons button {
+    flex: 1;
+  }
+}
+
+
